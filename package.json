@@ -1,0 +1,25 @@
+{
+  "name": "express-sessions-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server.js",
+    "make-certificate": "openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "session-file-store": "^1.2.0",
+    "tough-cookie-filestore": "0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
